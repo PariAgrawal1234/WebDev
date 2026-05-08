@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/35576326/pexels-photo-35576326.jpeg" width =800px alt="no image">
+
+    <img src="./HTML_image.jpg" width =800px alt="no image">
+    <picture>
+        <source srcset = "./HTML_imae.jpg" media="(min-width: 620px)">
+        <source srcset = "./HTML_imae.jpg" media="(min-width : 480px)">
+        <img src = "./HTML_image.jpg" alt = "no image">
+    </picture>
+
+    <!-- Image map generator -->
+
+    <img src="https://images.pexels.com/photos/35576326/pexels-photo-35576326.jpeg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="4311,3268,3844,2910" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="3421,2056,3049,1822" shape="rect">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on Function one.")
+    }
+    function two(){
+        alert("You clicked on Function two.")
+    }
+</script>
+    
+</body>
+</html>
