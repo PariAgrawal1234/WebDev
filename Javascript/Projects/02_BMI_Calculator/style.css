@@ -1,0 +1,41 @@
+body{
+    align-items: center;
+    align-self: center;
+    background-color: rgb(234, 245, 168);
+}
+
+.Content{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    height: 40px;
+    font-size: 20px;
+    width: 100px
+}
+
+#Calculate{
+    border-color: solid black;
+    border-radius: 8px;
+    background-color: brown;
+    color:azure;
+}
+
+.result{
+    margin-top: 20px;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.weight_guide{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+
+    border: 2px dotted rgb(248, 157, 0);
+}
