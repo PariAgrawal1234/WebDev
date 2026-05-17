@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+}
+
+h1{ 
+    text-align: center;
+    margin-top: 40px;
+    color: antiquewhite;
+}
+
+.Time_block{
+    width: 120px;
+      height: 40px;
+        margin-left: 40%;
+      background-color: orange;
+      border-radius: 12px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+}
