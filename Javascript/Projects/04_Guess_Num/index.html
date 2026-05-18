@@ -6,8 +6,26 @@
     <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    <div>
+    <div class="Container">
+        <h2> Number Guessing Game </h2>
+        <div class="Main_Box">
+            <p>Try and Guess the random number between <b>1 and 100 </b>.
+                <br>You have 10 attempts to guess the right number.
+            </p>
 
+            <div class="Guess_num">
+                <h1> Guess the Number </h1>
+                <input id="input" type="number">
+                <br> <br>
+                <button id="submit" > Submit Guess </button>
+            </div>
+
+            <div class = "result">
+                <h4> Previous Guesses: </h4>
+                <p id="rem_guess">Guesses Remaining: </p>
+                <p id = "l_h"></p>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

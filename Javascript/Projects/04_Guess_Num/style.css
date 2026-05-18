@@ -1,3 +1,35 @@
 body{
     background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Container{
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.Main_Box{
+    background-color: rgb(70, 69, 69);
+    padding: 20px;
+}
+
+h1, b{
+    color: yellow;
+}
+
+input{
+    border-radius: 2px;
+    border-color: grey;
+}
+
+#submit{
+    background-color:rgb(30, 30, 30);
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
 }
