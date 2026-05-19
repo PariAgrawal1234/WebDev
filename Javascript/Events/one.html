@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="flower01" src="https://images.pexels.com/photos/30770195/pexels-photo-30770195.jpeg" alt="flower01"></li>
+            <li><img width="200px" id="flower02" src="https://images.pexels.com/photos/29234302/pexels-photo-29234302.jpeg" alt="flower02"></li>
+            <li><img width="200px" id="flower03" src="https://images.pexels.com/photos/33516478/pexels-photo-33516478.jpeg" alt="flower03"></li>
+            <li><img width="200px" id="flower04" src="https://images.pexels.com/photos/33516480/pexels-photo-33516480.jpeg" alt="flower04"></li>
+            <li><img width="200px" id="flower05" src="https://images.pexels.com/photos/29815053/pexels-photo-29815053.jpeg" alt="flower05"></li>
+            <li> <a style="color: aliceblue;" id="google" href="https://google.com">Google</a> </li>
+        </ul>
+    </div>
+</body>
+<script>    
+
+//type, timstamp, preventDefault
+//target, toElement, srcElement, currentTarget
+//clientX, xlientY, screenX, screenY
+//altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('flower03').addEventListener('click', function (e) {
+    //     console.log("flower 03 clicked");
+    // }, false)
+
+    document.getElementById('google').addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Google Clicked');
+    })
+
+    document.querySelectorAll('li').forEach(function (e) {
+        e.addEventListener('click', function(j){
+            console.log(j.target.tagName);
+
+            //this removes whole list when clicked on bullets
+            // j.target.parentNode.remove();
+
+            //to remove that upon clicking
+            if(j.target.tagName === 'IMG'){
+                j.target.parentNode.remove();
+            }
+
+
+        })
+    })
+
+</script>
+</html>
