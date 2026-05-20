@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Checker</title>
+</head>
+<body style="display: flex; justify-content: center; background-color: #212121; color: antiquewhite;"> 
+    <div class="insertHere">
+    <h3>Press any key!</h3>
+    </div>
+</body>
+<script>
+    let tablepath = document.querySelector('.insertHere');
+    window.addEventListener('keydown', function (e) {   
+        tablepath.innerHTML = `
+            <table>
+                <tr>
+                    <th> key </th>
+                    <th> keyCode </th>
+                    <th> Code </th>
+                </tr>
+                <tr>
+                    <td> ${e.key === ' ' ? "Space" : e.key} </td>
+                    <td> ${e.keyCode} </td>
+                    <td> ${e.code} </td>
+                </tr>
+            </table>
+        `
+    })
+</script>
+</html>
